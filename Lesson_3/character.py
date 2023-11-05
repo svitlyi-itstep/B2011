@@ -23,3 +23,17 @@ class Character:
 
     def attack(self, target):
         return target.take_damage(self.damage)
+
+    def alive(self):
+        return self.health > 0
+
+    '''
+        Разработать метод, который позволяет определить жив персонаж или нет.
+        Живым считается персонаж, здоровье которого больше нуля.
+        
+        player1 = Character("Test", health=100)
+        player1.alive() (True)
+        
+        player1.health = 0
+        player1.alive() (False)
+    '''
